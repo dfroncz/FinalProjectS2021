@@ -3,7 +3,7 @@
 <h2>Films</h2>
 <ul>
     {% for f in film_list %}
-        <li>{{ f.filmname }}</li>
+        <li><a href="{% url 'detail' id=f.id %}">{{ f.filmname }}</a></li>
     {% endfor %}
 </ul>
 
